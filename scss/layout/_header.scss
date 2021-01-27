@@ -15,7 +15,7 @@ header {
   display: flex;
   margin-left: 93px;
 }
-.site-nav .link {
+.site-nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -27,20 +27,24 @@ header {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: getColor('accent-color');
+  }
 }
+
 .site-nav .item + .item {
   margin-left: 50px;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link.current {
+.site-nav-link.current {
   color: getColor('accent-color');
 }
 .site-nav .item {
   position: relative;
 }
-.site-nav .link.current::after {
+.site-nav-link.current::after {
   position: absolute;
   bottom: -1px;
   border-radius: 2px;
@@ -60,7 +64,7 @@ header {
   margin-left: 50px;
 }
 
-.auth-nav .link {
+.auth-nav-link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -73,12 +77,13 @@ header {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: getColor('accent-color');
+  }
 }
 
-.auth-nav .link:hover,
-.link:focus {
-  color: getColor('accent-color');
-}
 .link-icon {
   height: 16px;
   width: 16px;
