@@ -38,9 +38,10 @@
 .social {
   display: flex;
   justify-content: center;
-}
-.social-item:not(:last-child) {
-  margin-right: 10px;
+
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .social-link {
   display: flex;

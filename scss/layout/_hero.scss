@@ -13,11 +13,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  .hero-section {
+  &-section {
     width: 696px;
     text-align: center;
   }
-  .hero-title {
+  &-title {
     margin: 0 auto 30px;
 
     color: getColor('white-bg-color');

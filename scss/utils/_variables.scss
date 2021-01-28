@@ -11,3 +11,6 @@ $colors: (
 @function getColor($key) {
   @return map-get($colors, $key);
 }
+
+$primary-font-family: 'Roboto', sans-serif;
+$logo-font-family: 'Raleway', sans-serif;
