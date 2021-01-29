@@ -307,6 +307,10 @@ a {
   display: inline-block;
 }
 
+.checkbox:focus + .check-label::before {
+  border-color: #2196f3;
+}
+
 .checkbox:checked + .check-label::before {
   border-color: #2196f3;
   background-color: #2196f3;
